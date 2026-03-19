@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Umanshi 💖</title>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Quicksand:wght@300;500&display=swap" rel="stylesheet">
+<style>
+body {
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    background: linear-gradient(135deg, #ffd6e0, #e0c3fc);
+    min-height: 100vh;
+    overflow-y: auto;
+    display: flex;
+    justify-content: center;
+}
+
+/* floating hearts background */
+body::before {
+    content: "💖 💕 💗 💓 💞 💘";
+    position: fixed;
+    font-size: 40px;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.2;
+    animation: floatBg 20s linear infinite;
+}
+
+@keyframes floatBg {
+    0% {transform: translateY(100%);} 
+    100% {transform: translateY(-100%);} 
+}
+
+.container {
+    background: rgba(255,255,255,0.85);
+    padding: 30px;
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    max-width: 420px;
+    margin: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 48px;
+    color: #ff4d88;
+    animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {text-shadow: 0 0 10px #ff99cc, 0 0 20px #ff66b2;} 
+    to {text-shadow: 0 0 25px #ff1a75, 0 0 40px #ff4d88;}
+}
+
+.photo {
+         <img src="umanshi.png">
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #fff;
+    margin: 15px 0;
+}
+
+.message {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.timer {
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 20px;
+    background: linear-gradient(45deg, #ff4d88, #ff80bf);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10px 0;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+.letter, #reasons, #kisses, #hugs {
+    display: none;
+    margin-top: 20px;
+    font-size: 24px;
+    line-height: 1.8;
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Happy Birthday Umanshi 💖</h1>
+
+    <img src="umanshi.png" class="photo" alt="Umanshi">
+
+    <div class="message">
+        Happy Birthday my dear lovie 💖<br>
+        God bless you always ✨<br>
+        Tu hamesha mere sath reh ❤️<br>
+        Aur mujhse ladti reh 😘
+    </div>
+
+    <div class="timer" id="countdown"></div>
+
+    <!-- buttons in proper order -->
+    <button onclick="showLetter()">1. Surprise Letter 💌</button>
+    <button onclick="showReasons()">2. 100 Reasons 💖</button>
+    <button onclick="showKisses()">3. Kisses 💋</button>
+    <button onclick="showHugs()">4. Hugs 🤗</button>
+    <button onclick="showSpecial()">5. Why You Are Special 💖</button>
+
+    <div class="letter" id="letter" style="max-width:800px; margin:auto; background:#fff; padding:25px; border-radius:10px; text-align:left;">
+💖 My Dearest Umanshi 💖<br><br>
+
+I don’t even know where to begin, because no matter how many words I write, they will never be enough to explain how much you mean to me 💫. From the moment you came into my life, everything changed in the most beautiful way 🌸. My days became brighter, my nights became calmer, and my heart finally found a place where it truly belongs — with you 💕.
+
+You are my happiness 😊, my peace ✨, and my strength 💪. I love the way you smile, the way you talk, and even the way you get a little angry sometimes 😘. Every little thing about you feels perfect to me. The way you care 💖, the way you understand me without words 💞, and the way you always stay by my side no matter what — it means everything to me ❤️.
+
+With you, even the simplest moments feel magical ✨. Whether we are laughing 😂, talking endlessly, or even fighting a little 😏 — everything feels special because it’s with you. You are not just my girlfriend, you are my best friend, my comfort, my safe place, and my forever person 💗.
+
+On your special day 🎂, I just want to promise you something from the bottom of my heart — I will always stand by you. I will support you, protect you, and love you more with each passing day 💕. No matter what happens in life, I will never leave your side. You are my everything, and I am truly the luckiest person alive to have you 💖.
+
+Happy Birthday my love 🎉💖<br>
+Stay happy, keep smiling, and always stay mine 💋<br><br>
+
+Forever yours ❤️
+</div>
+
+    <div id="reasons" style="display:none; text-align:left; font-size:18px; line-height:1.6;">
+💖 100 Reasons Why I Love You 💖<br><br>
+1. Your smile 😊<br>2. Your eyes ✨<br>3. Your voice 🎶<br>4. Your kindness 💕<br>5. Your laugh 😂<br>
+6. Your care 💖<br>7. Your love 💞<br>8. Your cuteness 😍<br>9. Your honesty 💫<br>10. Your heart ❤️<br>
+11. Your nature 🌸<br>12. Your style 😎<br>13. Your vibe ✨<br>14. Your energy ⚡<br>15. Your positivity 🌈<br>
+16. Your confidence 💪<br>17. Your respect 🙏<br>18. Your trust 🤝<br>19. Your patience ⏳<br>20. Your understanding 💭<br>
+21. Your loyalty 💯<br>22. Your sweetness 🍫<br>23. Your innocence 🥺<br>24. Your strength 💥<br>25. Your support 🫶<br>
+26. Your presence 🧡<br>27. Your hugs 🤗<br>28. Your kisses 💋<br>29. Your laugh again 😂<br>30. Your smile again 😊<br>
+31. Your love again 💞<br>32. The way you talk 💬<br>33. The way you listen 👂<br>34. The way you care 💖<br>35. The way you love ❤️<br>
+36. The way you stay 🤍<br>37. The way you fight 😏<br>38. The way you make up 💕<br>39. The way you look at me 😍<br>40. The way you say my name 💓<br>
+41. Your late night talks 🌙<br>42. Your good morning texts ☀️<br>43. Your cute anger 😘<br>44. Your childish side 🧸<br>45. Your caring nature 🌷<br>
+46. Your honesty again 💫<br>47. Your loyalty again 💯<br>48. Your smile forever 😊<br>49. Your hugs forever 🤗<br>50. Your kisses forever 💋<br>
+51. Your everything 💖<br>52. Your imperfections 💕<br>53. Your perfection ✨<br>54. Your soul 🌌<br>55. Your heart again ❤️<br>
+56. Your love always 💞<br>57. Your vibe always ✨<br>58. Your energy always ⚡<br>59. Your presence always 🧡<br>60. Your support always 🫶<br>
+61. Your care always 💖<br>62. Your smile always 😊<br>63. Your eyes always ✨<br>64. Your laugh always 😂<br>65. Your love forever 💞<br>
+66. Your hugs always 🤗<br>67. Your kisses always 💋<br>68. Your words 💬<br>69. Your silence 🤫<br>70. Your emotions 💓<br>
+71. Your feelings 💗<br>72. Your dreams 🌙<br>73. Your goals 🎯<br>74. Your strength again 💪<br>75. Your cuteness again 😍<br>
+76. Your beauty 💃<br>77. Your inner beauty 💖<br>78. Your soul again 🌌<br>79. Your kindness again 💕<br>80. Your love forever ❤️<br>
+81. Your presence forever 🧡<br>82. Your smile forever 😊<br>83. Your hugs forever 🤗<br>84. Your kisses forever 💋<br>85. Your everything forever 💖<br>
+86. The way you exist 🌍<br>87. The way you love me ❤️<br>88. The way you trust me 🤝<br>89. The way you stay with me 🫶<br>90. The way you complete me 💕<br>
+91. Because you are special 💖<br>92. Because you are unique ✨<br>93. Because you are mine 💓<br>94. Because you are perfect 😍<br>95. Because you are amazing 💫<br>
+96. Because you are beautiful 🌹<br>97. Because you are everything 💖<br>98. Because you are my world 🌍<br>99. Because you are my life ❤️<br>100. Because you are YOU 💕
+</div>
+
+    <div id="kisses">💋💋💋💋💋💋💋💋💋</div>
+    <div id="hugs">🤗🤗🤗🤗🤗🤗🤗🤗🤗</div>
+
+    <div id="special" style="display:none; margin-top:20px; font-size:20px; line-height:1.7; text-align:left;">
+        💖 Why You Are So Special 💖<br><br>
+        You are special because you make my life beautiful 🌸<br>
+        You are special because your smile makes my day 😊<br>
+        You are special because you understand me without words 💕<br>
+        You are special because you care for me like no one else 💞<br>
+        You are special because you stay with me in every situation ❤️<br>
+        You are special because your love feels like home 🏡<br>
+        You are special because you are my happiness 💫<br>
+        You are special because you are my peace ✨<br>
+        You are special because you are my everything 💖
+    </div>
+
+    <button onclick="goBack()">⬅ Back</button>
+
+    <div style="margin-top:15px; font-size:14px; color:#555;">
+        Made by your ayn 💖 lots of love
+    </div>
+
+    <audio autoplay loop>
+        <source src="music.mp3" type="audio/mpeg">
+    </audio>
+
+</div>
+
+<script>
+const targetDate = new Date("March 31, 2026 00:00:00").getTime();
+const countdown = document.getElementById("countdown");
+
+setInterval(() => {
+    const now = new Date().getTime();
+    const distance = targetDate - now;
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    countdown.innerHTML = `⏳ ${days}d ${hours}h ${minutes}m ${seconds}s`;
+
+    if (distance < 0) {
+        countdown.innerHTML = "🎉 It's your day! 🎉";
+    }
+}, 1000);
+
+function hideAll() {
+    document.getElementById("letter").style.display = "none";
+    document.getElementById("reasons").style.display = "none";
+    document.getElementById("kisses").style.display = "none";
+    document.getElementById("hugs").style.display = "none";
+}
+
+function showLetter() {
+    hideAll();
+    document.getElementById("letter").style.display = "block";
+}
+function showReasons() {
+    hideAll();
+    document.getElementById("reasons").style.display = "block";
+}
+function showKisses() {
+    hideAll();
+    document.getElementById("kisses").style.display = "block";
+}
+function showHugs() {
+    hideAll();
+    document.getElementById("hugs").style.display = "block";
+}
+function goBack() {
+    hideAll();
+}
+
+function showSpecial() {
+    hideAll();
+    document.getElementById("special").style.display = "block";
+}
+</script>
+
+</body>
+  </html>
