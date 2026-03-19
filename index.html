@@ -54,17 +54,29 @@ h1 {
 @keyframes glow {
     from {text-shadow: 0 0 10px #ff99cc, 0 0 20px #ff66b2;} 
     to {text-shadow: 0 0 25px #ff1a75, 0 0 40px #ff4d88;}
+    @keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-8px); }
+    100% { transform: translateY(0px); }
+}
+}
+.photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 40%;
+    object-fit: cover;
+    border: 4px solid black;
+    margin: 15px auto;
+    display: block;
+    box-shadow: 0 10px 25px rgba(255, 77, 136, 0.5);
+    animation: float 3s ease-in-out infinite;
+    transition: 0.4s;
 }
 
-.photo {
-         <img src="umanshi.png">
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 5px solid #fff;
-    margin: 15px 0;
+.photo:hover {
+    transform: scale(1.08) rotate(2deg);
 }
+<img src="umanshi.jpg" class="photo" alt="Umanshi">
 
 .message {
     font-size: 16px;
@@ -110,7 +122,6 @@ button:hover {
     <h1>Happy Birthday Umanshi 💖</h1>
 
     <img src="umanshi.png" class="photo" alt="Umanshi">
-
     <div class="message">
         Happy Birthday my dear lovie 💖<br>
         God bless you always ✨<br>
